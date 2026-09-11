@@ -9,7 +9,7 @@ Diperlukan Node.js 22.13+ dan pnpm sesuai `packageManager` pada `package.json`. 
 ```bash
 corepack enable
 pnpm install --frozen-lockfile
-pnpm dev:next
+pnpm dev
 ```
 
 Buka alamat yang dicetak Next.js (biasanya `http://localhost:3000`). Tidak perlu login, database, atau API key. Tiga trip contoh langsung tersedia. Data trip hanya disimpan pada browser/perangkat yang dipakai. Menjalankan di origin/port lain menggunakan penyimpanan yang berbeda.
@@ -19,18 +19,37 @@ Perintah verifikasi:
 ```bash
 pnpm typecheck
 pnpm test
-pnpm build:next
-pnpm start:next
+pnpm build
+pnpm start
 ```
 
 Target Sites menggunakan adapter Vinext untuk App Router yang sama:
 
 ```bash
-pnpm dev
-pnpm build
+pnpm dev:sites
+pnpm build:sites
 ```
 
-Untuk lingkungan ChatGPT Work terkelola, gunakan alur preview/build Sites yang disediakan lingkungan. `build` menghasilkan Worker-compatible ESM; `build:next` menghasilkan build Next.js biasa.
+Untuk lingkungan ChatGPT Work terkelola, gunakan alur preview/build Sites yang disediakan lingkungan. `build:sites` menghasilkan Worker-compatible ESM; `build` menghasilkan build Next.js biasa.
+
+## Deploy ke Vercel
+
+Import repository `verrilmatthew/nusatrip` dan gunakan pengaturan berikut:
+
+| Pengaturan | Nilai |
+| --- | --- |
+| Framework Preset | Next.js |
+| Root Directory | Kosong / root repository (`./`) |
+| Node.js | 22.x |
+| Install Command | `npx --yes pnpm@11.19.0 install --frozen-lockfile` |
+| Build Command | `npm run build` |
+| Output Directory | `.next` |
+
+`vercel.json` menyimpan perintah install/build dan output tersebut. Hapus override lama yang memakai npm install, Vinext, Vite, atau output `dist`. Setelah perubahan digabungkan ke `main`, deploy commit terbaru; jangan redeploy commit lama yang gagal. Bila perlu, nonaktifkan penggunaan build cache saat redeploy.
+
+`package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`, `next.config.ts`, dan `vercel.json` harus sejajar dengan folder `app/`, `components/`, `lib/`, dan `public/`. Jangan meratakan isi folder-fol­der ini atau mengunggah ZIP sebagai pengganti source. Tidak perlu mengunggah `node_modules` atau `.next`.
+
+Aplikasi saat ini tidak membutuhkan environment variable untuk fitur lokal. Integrasi database D1 dan header autentikasi ChatGPT merupakan helper Sites, bukan layanan yang otomatis tersedia di Vercel. Data perjalanan tetap disimpan di browser.
 
 ## Cakupan yang dapat digunakan
 
@@ -93,7 +112,7 @@ Lihat `docs/PROVIDERS.md`. `.env.example` berisi nama pengaturan yang dicadangka
 1. Upload folder sumber ke repository Git dengan struktur utuh; `package.json` harus berada pada root proyek.
 2. Import repository ke Vercel; pilih framework Next.js dan root direktori proyek ini.
 3. Install command: `pnpm install --frozen-lockfile`.
-4. Build command: `pnpm build:next` (bukan build Worker Sites).
+4. Build command: `pnpm build` (bukan build Worker Sites).
 5. Biarkan output directory pada default Next.js; Node.js 22.x.
 6. Demo tidak memerlukan environment variable. Deploy dan periksa URL hasil deployment.
 
