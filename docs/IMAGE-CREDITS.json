@@ -1,0 +1,108 @@
+{
+  "created": "2026-09-10",
+  "downloadStatus": "No images downloaded. A local network request was cancelled by approval control. URLs below were obtained from web image search or real source page links; use remote URLs or an authorized asset import path.",
+  "assets": [
+    {
+      "destination": "Lombok",
+      "role": "primary wide hero and destination card",
+      "description": "Aerial Lombok coast, rolling green hills, pale beach and turquoise sea",
+      "imageUrl": "https://images.unsplash.com/photo-1677247757354-e3b087f1f8c8?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=2400",
+      "sourceUrl": "https://unsplash.com/s/photos/lombok",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "credit": "Unsplash; individual photographer not resolved",
+      "attributionRequired": false,
+      "verification": "Image URL and coastline subject returned by web image search for the Unsplash Lombok collection."
+    },
+    {
+      "destination": "Semarang",
+      "role": "destination card",
+      "description": "Gereja Blenduk and streetscape in Semarang Old Town",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Gereja_Blenduk_Di_Kota_Lama.jpg/1280px-Gereja_Blenduk_Di_Kota_Lama.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gereja_Blenduk_Di_Kota_Lama.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit": "Gereja Blenduk Di Kota Lama \u2014 Djunaidibd, Wikimedia Commons, CC BY-SA 4.0",
+      "attributionRequired": true,
+      "reuseNote": "Credit author and source, link license, indicate display crop/resizing if used, and retain CC BY-SA for adapted image.",
+      "dimensions": [
+        3000,
+        2000
+      ],
+      "verification": "Real Wikimedia source page supplies author, date, dimensions and license. Thumbnail link opened successfully in web tool."
+    },
+    {
+      "destination": "Makassar",
+      "role": "destination card",
+      "description": "99 Domes waterfront mosque at sunset with teal and peach sky, water and small boat",
+      "imageUrl": "https://images.unsplash.com/photo-1643022040583-b4be6de7fbf6?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1400",
+      "sourceUrl": "https://unsplash.com/s/photos/makassar",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "credit": "Unsplash; individual photographer not resolved",
+      "attributionRequired": false,
+      "verification": "Image URL and waterfront subject returned by web image search for the Unsplash Makassar collection."
+    },
+    {
+      "destination": "Bali",
+      "role": "destination card",
+      "description": "Dramatic cliffs overlook a turquoise bay and white sand beach",
+      "imageUrl": "https://images.unsplash.com/photo-1756312091377-bcfc4fbf7f97?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1400",
+      "sourceUrl": "https://unsplash.com/photos/dramatic-cliffs-overlook-a-turquoise-bay-and-white-sand-beach-6M3yCJrp_us",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "credit": "rishi (@beingabstrac) / Unsplash",
+      "attributionRequired": false,
+      "verification": "Photo page identifies Bali, photographer and free Unsplash license. Exact image URL extracted from the page's image link. Image fetch in web tool returned internal error."
+    },
+    {
+      "destination": "Sumba",
+      "role": "destination card",
+      "description": "Lush rolling grass hills in East Sumba",
+      "imageUrl": "https://images.unsplash.com/photo-1749350902665-efefbfc84fd4?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1400",
+      "sourceUrl": "https://unsplash.com/es/fotos/las-colinas-onduladas-estan-cubiertas-de-exuberante-hierba-verde-PZnnuLYr8rY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "credit": "Fadhil Abhimantra (@fabhimantra) / Unsplash",
+      "attributionRequired": false,
+      "verification": "Photo page identifies Sumba Timur, photographer and free Unsplash license. Exact image URL extracted from the page's image link. Image fetch in web tool returned internal error."
+    },
+    {
+      "destination": "Banyuwangi",
+      "role": "destination card",
+      "description": "Waterfall surrounded by tropical green plants in Banyuwangi",
+      "imageUrl": "https://images.unsplash.com/photo-1513137389744-267d0b623771?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1400",
+      "sourceUrl": "https://unsplash.com/photos/waterfall-surrounded-by-green-plants-taken-at-daytime-zbhW0nj1eeA",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "credit": "Atik sulianami / Unsplash",
+      "attributionRequired": false,
+      "verification": "Photo page identifies Banyuwangi Regency, photographer and free Unsplash license. Exact image URL extracted from the page's image link. Image fetch in web tool timed out."
+    },
+    {
+      "destination": "Surabaya",
+      "role": "destination card",
+      "description": "White Art Deco facade of Hotel Majapahit on Tunjungan Street",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Gedung_Hotel_Majapahit_%28tengah%29.jpg/1280px-Gedung_Hotel_Majapahit_%28tengah%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedung_Hotel_Majapahit_(tengah).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit": "Gedung Hotel Majapahit (tengah) \u2014 Ulumarifah, Wikimedia Commons, CC BY-SA 4.0",
+      "attributionRequired": true,
+      "reuseNote": "Credit author and source, link license, indicate display crop/resizing if used, and retain CC BY-SA for adapted image.",
+      "dimensions": [
+        3218,
+        2062
+      ],
+      "verification": "Real Wikimedia source page supplies author, location, dimensions and license. Thumbnail link opened successfully in web tool."
+    }
+  ],
+  "additionalLombokCard": {
+    "imageUrl": "https://images.unsplash.com/photo-1562260466-6a54274f610b?fm=jpg&ixlib=rb-4.1.0&q=80&w=1400",
+    "sourceUrl": "https://unsplash.com/s/photos/lombok",
+    "description": "Aerial pale-sand beach and turquoise shallows, two outrigger boats and one swimmer",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "verification": "Returned by web image search with Unsplash Lombok collection source. Individual photographer not resolved."
+  }
+}
